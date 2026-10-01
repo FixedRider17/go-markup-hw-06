@@ -51,9 +51,22 @@ img {
 }
 
 .container {
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1158px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .sr-only {
@@ -69,5 +82,14 @@ img {
   clip-path: inset(100%);
 }
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+}
+.hide {
+  display: none;
 }
