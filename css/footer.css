@@ -139,8 +139,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding-right: 108px;
-    padding-left: 108px;
     gap: 72px 24px;
   }
 
@@ -174,8 +172,6 @@
 
   .footer-container {
     flex-wrap: nowrap;
-    padding-right: 15px;
-    padding-left: 15px;
     gap: 0;
   }
 
@@ -185,5 +181,11 @@
 
   .footer-subscribe {
     margin-left: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-container {
+    padding-right: 108px;
+    padding-left: 108px;
   }
 }
